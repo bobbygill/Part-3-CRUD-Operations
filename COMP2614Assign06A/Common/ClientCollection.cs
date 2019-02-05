@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace COMP2614Assign06B
+namespace COMP2614Assign06B.Common
 {
     public class ClientCollection : BindingList<Client>
     {
@@ -14,7 +14,7 @@ namespace COMP2614Assign06B
         public decimal TotalYTDSales => this.Sum(x => x.YTDSales);
 
         public int CreditHoldCount => this.Count(x => x.CreditHold);
-      
+
 
     }
 }

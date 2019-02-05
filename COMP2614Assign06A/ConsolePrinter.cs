@@ -1,4 +1,5 @@
-﻿using System;
+﻿using COMP2614Assign06B.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

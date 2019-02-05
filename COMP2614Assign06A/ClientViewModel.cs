@@ -1,4 +1,5 @@
-﻿using System;
+﻿using COMP2614Assign06B.Common;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -136,7 +137,7 @@ namespace COMP2614Assign06B
             }
         }
 
-        public ClientCollection Clients { get; }
+        public ClientCollection Clients { get; set; }
 
         //the set methods triggers the OnPropertyChanged()
         public void SetDisplayClient(Client client)
@@ -151,6 +152,32 @@ namespace COMP2614Assign06B
             this.YTDSales = client.YTDSales;
             this.CreditHold = client.CreditHold;
             this.Notes = client.Notes;
+        }
+
+        public Client GetDisplayClient()
+        {
+            return new Client
+            {
+                ClientCode = this.ClientCode
+                               ,
+                CompanyName = this.CompanyName
+                               ,
+                Address1 = this.Address1
+                               ,
+                Address2 = this.Address2
+                               ,
+                City = this.City
+                               ,
+                Province = this.Province
+                               ,
+                PostalCode = this.PostalCode
+                               ,
+                YTDSales = this.YTDSales
+                               ,
+                CreditHold = this.CreditHold
+                               ,
+                Notes = this.Notes
+            };
         }
 
         public Client SaveProduct(int collectionIndex)

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace COMP2614Assign06B
+namespace COMP2614Assign06B.Common
 {
     public class Client
     {
@@ -18,6 +18,9 @@ namespace COMP2614Assign06B
         public decimal YTDSales { get; set; }
         public bool CreditHold { get; set; }
         public string Notes { get; set; }
+
+
+        public Client() { }
 
         public Client(string clientCode, string companyName, string address1, string address2, string city, string province, string postalCode, decimal yTDSales, bool creditHold, string notes)
         {

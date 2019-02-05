@@ -30,6 +30,8 @@
         {
             this.dataGridViewClients = new System.Windows.Forms.DataGridView();
             this.buttonEdit = new System.Windows.Forms.Button();
+            this.buttonNewRecord = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClients)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,7 +41,7 @@
             this.dataGridViewClients.Location = new System.Drawing.Point(28, 26);
             this.dataGridViewClients.Name = "dataGridViewClients";
             this.dataGridViewClients.Size = new System.Drawing.Size(790, 248);
-            this.dataGridViewClients.TabIndex = 12;
+            this.dataGridViewClients.TabIndex = 3;
             this.dataGridViewClients.DoubleClick += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonEdit
@@ -47,16 +49,38 @@
             this.buttonEdit.Location = new System.Drawing.Point(743, 289);
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(75, 23);
-            this.buttonEdit.TabIndex = 13;
+            this.buttonEdit.TabIndex = 2;
             this.buttonEdit.Text = "&Edit Record";
             this.buttonEdit.UseVisualStyleBackColor = true;
             this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
+            // 
+            // buttonNewRecord
+            // 
+            this.buttonNewRecord.Location = new System.Drawing.Point(648, 289);
+            this.buttonNewRecord.Name = "buttonNewRecord";
+            this.buttonNewRecord.Size = new System.Drawing.Size(75, 23);
+            this.buttonNewRecord.TabIndex = 1;
+            this.buttonNewRecord.Text = "&New Record";
+            this.buttonNewRecord.UseVisualStyleBackColor = true;
+            this.buttonNewRecord.Click += new System.EventHandler(this.buttonNewRecord_Click);
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.Location = new System.Drawing.Point(545, 289);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(75, 23);
+            this.buttonDelete.TabIndex = 0;
+            this.buttonDelete.Text = "&Delete";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(853, 324);
+            this.Controls.Add(this.buttonDelete);
+            this.Controls.Add(this.buttonNewRecord);
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.dataGridViewClients);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -73,6 +97,8 @@
         #endregion
         private System.Windows.Forms.DataGridView dataGridViewClients;
         private System.Windows.Forms.Button buttonEdit;
+        private System.Windows.Forms.Button buttonNewRecord;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }
 

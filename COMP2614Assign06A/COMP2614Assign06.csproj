@@ -49,15 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client.cs" />
-    <Compile Include="ClientCollection.cs" />
+    <Compile Include="Business\ClientValidation.cs" />
+    <Compile Include="Common\Client.cs" />
+    <Compile Include="Common\ClientCollection.cs" />
     <Compile Include="ClientEditDialog.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ClientEditDialog.Designer.cs">
       <DependentUpon>ClientEditDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientRepository.cs" />
+    <Compile Include="Data\ClientRepository.cs" />
     <Compile Include="ClientViewModel.cs" />
     <Compile Include="ConsolePrinter.cs" />
     <Compile Include="MainForm.cs">
@@ -96,5 +97,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
